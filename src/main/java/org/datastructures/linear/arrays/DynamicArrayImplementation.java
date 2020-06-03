@@ -47,7 +47,10 @@ public class DynamicArrayImplementation {
      * @param index
      */
     public void insertAt(int item, int index) {
-
+        if (index < 0 || index > dynamicArray.length - 1) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        dynamicArray[index] = dynamicArray[item];
     }
 
     /**
@@ -58,7 +61,7 @@ public class DynamicArrayImplementation {
     public void removeAt(int index) {
         //check for valid index
         if (index < 0 || index >= count) {
-            throw new IllegalArgumentException();
+            throw new ArrayIndexOutOfBoundsException();
         }
         tempArray = new int[count - 1];
         //Shift the items to the left
@@ -76,9 +79,8 @@ public class DynamicArrayImplementation {
         count--;
     }
 
-
     /**
-     * Use this me to find index of first occurence of the element
+     * Use this me to find index of first occurrence of the element
      *
      * @param element
      * @return
@@ -90,6 +92,48 @@ public class DynamicArrayImplementation {
             }
         }
         return -1;
+    }
+
+    public int[] intersect(int[] thisArray, int[] anotherArray) {
+        if (thisArray.length == 0 || anotherArray.length == 0) {
+            throw new IllegalArgumentException("Either of thisArray|anotherArray length is 0");
+        }
+        if (thisArray.length < anotherArray.length) {
+            tempArray = new int[thisArray.length];
+            for (int i = 0; i < thisArray.length; i++) {
+                for (int j = 0; j < anotherArray.length; j++) {
+                    if (thisArray[i] == anotherArray[j]) {
+                        tempArray[i] = thisArray[i];
+                    }
+                }
+            }
+        } else {
+            tempArray = new int[anotherArray.length];
+            for (int i = 0; i < anotherArray.length; i++) {
+                for (int j = 0; j < thisArray.length; j++) {
+                    if (anotherArray[i] == thisArray[j]) {
+                        tempArray[i] = anotherArray[i];
+                    }
+                }
+            }
+        }
+
+        return tempArray;
+    }
+
+    /**
+     * Use this method to reverse the Dynamic Array
+     */
+    public void reverse() {
+        //check for valid index
+        if (count == 0) {
+            throw new IllegalArgumentException("Array is Empty");
+        }
+        tempArray = new int[dynamicArray.length];
+        for (int i = dynamicArray.length - 1, j = 0; i >= 0; i--, j++) {
+            tempArray[j] = dynamicArray[i];
+        }
+        dynamicArray = tempArray;
     }
 
     /**
@@ -104,21 +148,6 @@ public class DynamicArrayImplementation {
         }
         return maxValue;
     }
-
-    /**
-     * Use this method to reverse the Dynamic Array
-     */
-    public void reverse() {
-        //check for valid index
-        if (count == 0) {
-            throw new IllegalArgumentException("Array is Empty");
-        }
-        for (int i = dynamicArray.length - 1, j = 0; i >= 0; i--, j++) {
-            tempArray[j] = dynamicArray[i];
-        }
-        dynamicArray = tempArray;
-    }
-
 
     /**
      * Use this method to print elements of Dynamic Arrays
