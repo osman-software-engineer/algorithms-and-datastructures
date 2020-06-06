@@ -50,7 +50,7 @@ public class LinkedListImplementationTest {
         Assert.assertTrue(linkedList.contains(1));
         Assert.assertTrue(linkedList.contains(4));
         Assert.assertTrue(linkedList.contains(10));
-        Assert.assertFalse(linkedList.contains(10));
+        Assert.assertFalse(linkedList.contains(11));
     }
 
     @Test
@@ -59,5 +59,23 @@ public class LinkedListImplementationTest {
             linkedList.addLast(i);
         }
         linkedList.print();
+    }
+
+    @Test
+    public void testRemoveLast() {
+        for (int i = 1; i <= 5; i++) {
+            linkedList.addLast(i * 10);
+        }
+        linkedList.removeLast();
+        Assert.assertEquals(4, linkedList.size);
+    }
+
+    @Test
+    public void testRemoveFirst() {
+        for (int i = 1; i <= 5; i++) {
+            linkedList.addLast(i * 10);
+        }
+        linkedList.removeFirst();
+        Assert.assertEquals(4, linkedList.size);
     }
 }

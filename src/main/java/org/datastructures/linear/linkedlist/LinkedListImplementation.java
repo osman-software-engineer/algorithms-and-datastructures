@@ -91,6 +91,63 @@ public class LinkedListImplementation {
     }
 
     /**
+     * Use this method to remove last item in linked
+     */
+    public void removeLast() {
+        if (head == null) {
+            throw new IllegalArgumentException("List is already empty, cannot remove anything");
+        }
+        if (head.next == null) {
+            head = null;
+        } else {
+            Node current = head;
+            Node previous = null;
+            while (current.next != null) {
+                previous = current;
+                current = current.next;
+            }
+            previous.next = null;
+            size--;
+
+        }
+    }
+
+    /**
+     * Use this method to remove first item in linked
+     */
+    public void removeFirst() {
+        if (head == null) {
+            throw new IllegalArgumentException("List is already empty, cannot remove anything");
+        }
+        if (head.next == null) {
+            head = null;
+        } else {
+            Node previous = null;
+            Node current = head;
+            Node next = current.next;
+            current.next = null;
+            head = next;
+            size--;
+        }
+    }
+
+    /**
+     * use to method to convert Linked List to Array
+     *
+     * @return : an int Array
+     */
+    public int[] toArray() {
+        int[] array = new int[size];
+        Node current = head;
+        int index = 0;
+        while (current != null) {
+            array[index++] = current.data;
+            current = current.next;
+        }
+        return array;
+    }
+
+    /**
      * use this method to print data in linked list
      */
     public void print() {
