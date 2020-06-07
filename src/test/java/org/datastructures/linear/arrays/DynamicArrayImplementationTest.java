@@ -71,7 +71,7 @@ public class DynamicArrayImplementationTest {
         dynamicArray.insert(30);
         dynamicArray.insert(40);
         int[] result1 = dynamicArray.intersect(new int[]{1,2,3,4,5,6}, new int[]{5,6});
-       Assert.assertEquals(result1,new int[]{5,6});
+        Assert.assertEquals(result1, new int[]{5, 6});
         int[] result2 = dynamicArray.intersect(new int[]{3,4}, new int[]{1,2,3,4,5,6});
         Assert.assertEquals(result2,new int[]{3,4});
     }
