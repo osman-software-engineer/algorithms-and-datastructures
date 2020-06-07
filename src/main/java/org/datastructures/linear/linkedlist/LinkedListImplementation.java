@@ -132,6 +132,27 @@ public class LinkedListImplementation {
     }
 
     /**
+     * Use this method to reverse the linked list
+     */
+    public void reverse() {
+        if (head == null) {
+            throw new IllegalArgumentException("List is already empty, cannot remove anything");
+        }
+        Node previous = head;
+        Node current = head.next;
+        Node next = null;
+        Node last = previous;
+        while (current != null) {
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
+        last.next = null;
+    }
+
+    /**
      * use to method to convert Linked List to Array
      *
      * @return : an int Array

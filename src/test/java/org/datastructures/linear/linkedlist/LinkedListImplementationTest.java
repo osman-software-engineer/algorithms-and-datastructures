@@ -78,4 +78,22 @@ public class LinkedListImplementationTest {
         linkedList.removeFirst();
         Assert.assertEquals(4, linkedList.size);
     }
+
+    @Test
+    public void testToArray() {
+        for (int i = 1; i <= 5; i++) {
+            linkedList.addLast(i * 10);
+        }
+        System.out.println(linkedList.toArray());
+    }
+
+    @Test
+    public void testReverse() {
+        for (int i = 1; i <= 1; i++) {
+            linkedList.addLast(i * 10);
+        }
+        linkedList.print();
+        linkedList.reverse();
+        linkedList.print();
+    }
 }
