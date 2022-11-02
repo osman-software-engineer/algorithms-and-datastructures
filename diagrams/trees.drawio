@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T00:45:18.074Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ff1i83OXPvzQvLibwhIp" version="20.5.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-11-02T01:16:02.863Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="RJHnsfwy6ZBk_AP9Z58v" version="20.5.1" type="github" pages="3">
   <diagram id="ZmM8F6mxOlM4--eF3i2c" name="General">
-    <mxGraphModel dx="1422" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -83,7 +83,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3f2JQ4GR_RXdFJvRzyvd" name="Basics">
-    <mxGraphModel dx="3220" dy="1162" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2523" dy="887" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -244,7 +244,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3wVH2UfbAH4rkHt-dl_7" name="rules">
-    <mxGraphModel dx="2881" dy="996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2881" dy="1077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -353,7 +353,7 @@
             <mxPoint x="762" y="724" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-25" value="G) Sibilings" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-25" value="E) Siblings" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="760" y="710" width="82" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-26" value="" style="endArrow=classic;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=1;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1">
@@ -517,7 +517,7 @@
             <mxPoint x="1842" y="728.9999999999998" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-59" value="G) Sibilings" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-59" value="E) Sibilings" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="1840" y="715" width="82" height="30" as="geometry" />
         </mxCell>
         <mxCell id="PJ6DdmK4V6Jvt_ld2_nv-60" value="" style="endArrow=classic;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;endFill=1;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="1">
